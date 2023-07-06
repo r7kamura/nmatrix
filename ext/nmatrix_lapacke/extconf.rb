@@ -25,7 +25,7 @@
 # This file checks for ATLAS and other necessary headers, and
 # generates a Makefile for compiling NMatrix.
 
-require "nmatrix/mkmf"
+require_relative "../../lib/nmatrix/mkmf"
 
 #$INSTALLFILES = [['nmatrix.h', '$(archdir)'], ['nmatrix.hpp', '$(archdir)'], ['nmatrix_config.h', '$(archdir)'], ['nm_memory.h', '$(archdir)']]
 if /cygwin|mingw/ =~ RUBY_PLATFORM
